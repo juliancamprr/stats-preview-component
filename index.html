@@ -46,6 +46,7 @@
         background-color: hsl(244, 38%, 16%);
         width: 600px;
         height: 450px;
+        flex-wrap: wrap;
       }
 
       .text-info {
@@ -94,6 +95,20 @@
         margin-top: -20px;
         color: hsla(0, 0%, 100%, 0.75);
       }
+
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column-reverse;
+          display: block;
+        }
+
+        .card {
+          width: auto;
+          margin: 70px;
+        }
+        
+      }
+
     </style>
   </head>
   <body>
